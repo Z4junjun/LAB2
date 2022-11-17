@@ -1,0 +1,36 @@
+<!--Components/mydice/mydice.wxml-->
+<view class="dice">
+  <view class="face1">
+    <view class="dot1"></view>
+  </view>
+  <view class="face2">
+    <view class="dot2"></view>
+    <view class="dot2"></view>
+  </view>
+  <view class="face3">
+    <view class="dot2"></view>
+    <view class="dot2"></view>
+    <view class="dot2"></view>
+  </view>
+  <view class="face4">
+    <view class="dot2"></view>
+    <view class="dot2"></view>
+    <view class="dot2"></view>
+    <view class="dot2"></view>
+  </view>
+  <view class="face5">
+    <view class="dot2"></view>
+    <view class="dot2"></view>
+    <view class="dot2"></view>
+    <view class="dot2"></view>
+    <view class="dot2"></view>
+  </view>
+  <view class="face6">
+    <view class="dot2"></view>
+    <view class="dot2"></view>
+    <view class="dot2"></view>
+    <view class="dot2"></view>
+    <view class="dot2"></view>
+    <view class="dot2"></view>
+  </view>
+</view>

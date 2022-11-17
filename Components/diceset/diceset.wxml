@@ -1,0 +1,9 @@
+<!--Components/diceset/diceset.wxml-->
+<view class="container1">
+<dice wx:if="{{value==1}}" class="d1"></dice>
+<dice wx:elif="{{value==2}}" class="d2"></dice>
+<dice wx:elif="{{value==3}}" class="d3"></dice>
+<dice wx:elif="{{value==4}}" class="d4"></dice>
+<dice wx:elif="{{value==5}}" class="d5"></dice>
+<dice wx:elif="{{value==6}}" class="d6"></dice>
+</view>

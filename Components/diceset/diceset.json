@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "dice": "/Components/mydice/mydice"
+  }
+}

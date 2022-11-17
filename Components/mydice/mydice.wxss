@@ -1,0 +1,80 @@
+/* Components/mydice/mydice.wxss */
+.dice {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dice>view {
+  background: white;
+  width: 20px;
+  height: 20px;
+  border: 1px solid black;
+  border-radius: 5px;
+  display: flex;
+  position: absolute;
+}
+.face1 {
+  justify-content: center;
+  align-items: center;
+  transform: translate3d(0,0,11px);
+}
+.face2 {
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  transform: translate3d(0,-11px,0) rotateX(90deg);
+}
+.face3 {
+  justify-content: space-around;
+  align-items: center;
+  transform: translate3d(-11px,0,0) rotateY(90deg);
+}
+.face3>view:nth-child(1){
+  margin: 1px 1px;
+  align-self: flex-end;
+}
+.face3>view:nth-child(3){
+  margin: 1px 1px;
+  align-self: flex-start;
+}
+.face4{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  transform: translate3d(11px,0,0) rotateY(90deg);
+}
+.face4>view{
+  margin: 2.4px;
+  background: red;
+}
+.face5{
+  flex-wrap: wrap;
+  align-items: center;
+  transform: translate3d(0,11px,0) rotateX(90deg);
+}
+.face5>view{
+  margin: 0 2.5px;
+}
+.face5>view:nth-child(3){
+  margin: 0 7.5px;
+}
+.face6{
+  flex-wrap: wrap;
+  align-items: center;
+  transform: translate3d(0,0,-11px);
+}
+.face6>view{
+  margin: 0 2.5px;
+}
+.dot1 {
+  width: 10px;
+  height: 10px;
+  background: red;
+  border-radius: 50%;
+}
+.dot2 {
+  width: 5px;
+  height: 5px;
+  background:black;
+  border-radius: 50%;
+}

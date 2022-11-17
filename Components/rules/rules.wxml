@@ -1,0 +1,9 @@
+<!--Components/rules/rules.wxml-->
+<scroll-view wx:if="{{isRules}}" class="myrules">
+  <button class="b1" bindtap="deleteRule"
+  style="width: 30px;border: none;" plain>
+  <image class="i1" src="cloud://bobing-4g7vlfho1800a403.626f-bobing-4g7vlfho1800a403-1314854757/images/delete.png">
+  </image>
+  </button>
+  <image class="ruleimage" src="cloud://bobing-4g7vlfho1800a403.626f-bobing-4g7vlfho1800a403-1314854757/images/rules.jpg"></image>
+</scroll-view>
