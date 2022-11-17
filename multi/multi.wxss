@@ -1,0 +1,91 @@
+/* pages/multi/multi.wxss */
+page{
+  height:100%;
+}
+.touxiang{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 100px;
+}
+.background {
+  width: 100%;
+  height: 100%;
+  position:fixed; 
+  background-size:100% 100%;
+  z-index: -1;
+}
+.bowl{
+  width: 250px;
+  height: 250px;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate3d(-125px,-125px,0);
+}
+.dice1{
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate3d(-25px,-25px,0);
+}
+.dice2{
+  position: absolute;
+  top: 45%;
+  left: 56.5%;
+  transform: translate3d(-25px,-25px,0);
+}
+.dice3{
+  position: absolute;
+  top: 32%;
+  left: 56%;
+  transform: translate3d(-25px,-25px,0);
+}
+.dice4{
+  position: absolute;
+  top: 36%;
+  left: 45%;
+  transform: translate3d(-25px,-25px,0);
+}
+.dice5{
+  position: absolute;
+  top: 39%;
+  left: 37%;
+  transform: translate3d(-25px,-25px,0);
+}
+.dice6{
+  position: absolute;
+  top: 49%;
+  left: 46%;
+  transform: translate3d(-25px,-25px,0);
+}
+.container2 {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate3d(-100px,0,0);
+}
+.container3 {
+  border: 2px solid black;
+  border-radius: 20px;
+  width: 90%;
+  height: 100px;
+  position: absolute;
+  left: 5%;
+  bottom: 0;
+}
+.userinfo-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.rule {
+  position: absolute;
+  top:0;
+  right: 0;
+  font-size: 12px;
+  font-weight: bolder;
+  text-shadow: 0 0 10px white;
+}
