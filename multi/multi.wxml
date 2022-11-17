@@ -1,0 +1,26 @@
+<!--pages/multi/multi.wxml-->
+<image class='background' src="cloud://bobing-4g7vlfho1800a403.626f-bobing-4g7vlfho1800a403-1314854757/images/image2.jpg" mode="aspectFill"></image>
+<image class='bowl' src="cloud://bobing-4g7vlfho1800a403.626f-bobing-4g7vlfho1800a403-1314854757/images/bluebowl.png" mode="aspectFit"></image>
+<image class="userinfo-avatar" src="{{info.avatarUrl}}"></image>
+<button class="rule" bindtap="getRule"
+style="width: 100px;color: yellow;" plain>游戏规则</button>
+<view style="font-weight: bolder;">当前房间号是： 8888</view>
+<view style="font-weight: bolder;">房间总人数是： 1</view>
+<view style="font-weight: bolder;">当前轮到的用户是：{{name}}</view>
+<view class="container1">
+  <dices class="dice1" value="{{value1}}"></dices>
+  <dices class="dice2" value="{{value2}}"></dices>
+  <dices class="dice3" value="{{value3}}"></dices>
+  <dices class="dice4" value="{{value4}}"></dices>
+  <dices class="dice5" value="{{value5}}"></dices>
+  <dices class="dice6" value="{{value6}}"></dices>
+</view>
+<view class="container2">
+  <button bindtap="Throw" disabled="{{isClicked}}">Throwing</button>
+</view>
+<scroll-view class="container3" scroll-y>
+  <block wx:for="{{records}}" wx:key="index">
+    <view>{{index+1}}.{{item.time}}  {{name}} 获得了：{{item.award}}</view>
+  </block>
+</scroll-view>
+<rule isRules="{{isRule}}"></rule>

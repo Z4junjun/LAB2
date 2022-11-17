@@ -1,0 +1,31 @@
+<!--pages/main/main.wxml-->
+<image class='background' src="cloud://bobing-4g7vlfho1800a403.626f-bobing-4g7vlfho1800a403-1314854757/images/image1.jpg" mode="aspectFill"></image>
+<view class="container">
+  <view class="text">BoBing</view>
+  <button bindtap="cSingle" plain>单机模式</button>
+  <block>
+    <button bindtap="cMulti" wx:if="{{hasUserInfo}}" plain>多人模式
+    </button>
+    <button wx:else bindtap="getUserProfile" plain>授权开启多人</button>
+  </block>
+  <button bindtap="cRules" plain>规则</button>
+  <block wx:if="{{!hasUserInfo}}">
+    <button wx:if="{{canIUseGetUserProfile}}" bindtap="getUserProfile" plain>授权</button>
+    <button wx:else open-type="getUserInfo" bindgetuserinfo="getUserInfo" plain>重新授权</button>
+  </block>
+  <block wx:else>
+    <button bindtap="cancleUserProfile" plain>取消授权</button>
+  </block>
+</view>
+<rule isRules="{{isRule}}"></rule>
+<block wx:if="{{chooseMulti}}">
+  <view class="con4" style="background: rgb(247, 182, 62)">
+  <view>尊敬的用户： {{userInfo.nickName}}</view>
+  <view>请在下列输入框中输入您选择的房间号： </view>
+  <input class="in" value="{{number}}" bindinput="inputnumber"
+  style="background-color:  white; width: 150px; margin: 5px 70px;">
+  </input>
+  <button bindtap="inMulti">开房间</button>
+  <button bindtap="inMulti">进入房间</button>
+  </view>
+</block>
